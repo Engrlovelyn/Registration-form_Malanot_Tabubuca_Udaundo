@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>College Enrollment Form</h2>
+
+    <!-- Ito yung mag handle ng in upload mong file  san all kayang i handle-->
+    <form method="POST" action="submit.php" enctype="multipart/form-data">
+        <h3>Personal Information</h3>
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="birthplace">Place of Birth:</label>
+        <input type="text" id="birthplace" name="birthplace" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="citizenship">Citizenship/Nationality:</label>
+        <input type="text" id="citizenship" name="citizenship" required>
+
+        <label for="civil_status">Civil Status:</label>
+        <select id="civil_status" name="civil_status" required>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Widowed">Widowed</option>
+        </select>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" id="contact_number" name="contact_number" required>
+
+        <label for="email_address">Email Address:</label>
+        <input type="email" id="email_address" name="email_address" required>
+
+        <label for="home_address">Home Address:</label>
+        <input type="text" id="home_address" name="home_address" required>
+
+        <h3>Educational Background</h3>
+        <label for="shs_school">Senior High School Attended:</label>
+        <input type="text" id="shs_school" name="shs_school" required>
+
+        <label for="shs_strand">Strand/Track Taken:</label>
+        <input type="text" id="shs_strand" name="shs_strand" required>
+
+        <label for="shs_year">Year Graduated:</label>
+        <input type="text" id="shs_year" name="shs_year" required>
+
+        <label for="awards">Awards/Honors Received:</label>
+        <input type="text" id="awards" name="awards">
+
+        <h3>Family Information</h3>
+        <label for="parent_name">Parent/Guardian's Full Name:</label>
+        <input type="text" id="parent_name" name="parent_name" required>
+
+        <label for="parent_contact">Parent/Guardian's Contact Number:</label>
+        <input type="text" id="parent_contact" name="parent_contact" required>
+
+        <label for="parent_occupation">Parent/Guardian's Occupation:</label>
+        <input type="text" id="parent_occupation" name="parent_occupation" required>
+
+        <h3>Course and Enrollment Details</h3>
+        <label for="course">Desired Course/Degree Program:</label>
+        <select id="course" name="course" required>
+            <option value="BS Information Technology">BS Information Technology</option>
+            <option value="BLIS">BLIS</option>
+            <option value="BSTM">BSTM</option>
+            <option value="BSBA">BSBA</option>
+            <option value="BSCRIM">BSCRIM</option>
+            
+        </select>
+
+        <label for="student_type">Student Type:</label>
+        <select id="student_type" name="student_type" required>
+            <option value="New">New</option>
+            <option value="Transferee">Transferee</option>
+            <option value="Returning">Returning</option>
+        </select>
+
+        <label for="academic_year">Academic Year:</label>
+        <input type="text" id="academic_year" name="academic_year" required>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester" required>
+            <option value="1st Semester">1st Semester</option>
+            <option value="2nd Semester">2nd Semester</option>
+        </select>
+
+        <label for="preferred_section">Preferred Section (if applicable):</label>
+        <input type="text" id="preferred_section" name="preferred_section">
+
+        <h3>Upload Documents</h3>
+        <label for="file">Upload your ID Picture or other documents:</label>
+        <input type="file" name="file" id="file" required>
+
+    
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
